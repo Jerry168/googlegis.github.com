@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "我的暗金时代一"
-date: 1900-01-01 21:12:20 +0800
+date: 2014-02-27 21:45:33 +0800
 comments: true
 categories: Archives
 ---
-#  伤仲永
+# 伤仲永
 
 仲永生五年，聪敏，父使其学，时逢学校欲改建，大兴土木。
 
