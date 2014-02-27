@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[找屎啊！]]></title>
   <link href="http://googlegis.github.io/atom.xml" rel="self"/>
   <link href="http://googlegis.github.io/"/>
-  <updated>2014-02-27T13:11:35+08:00</updated>
+  <updated>2014-02-27T13:34:18+08:00</updated>
   <id>http://googlegis.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Jay]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
