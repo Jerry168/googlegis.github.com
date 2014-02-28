@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac | 找屎啊！]]></title>
   <link href="http://googlegis.github.io/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://googlegis.github.io/"/>
-  <updated>2014-02-28T17:21:12+08:00</updated>
+  <updated>2014-02-28T20:18:26+08:00</updated>
   <id>http://googlegis.github.io/</id>
   <author>
     <name><![CDATA[Jay]]></name>
@@ -57,7 +57,7 @@ ssh-keygen -t rsa -C 你注册github时的email
 
 <p>测试shh:</p>
 
-<p>ssh <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#111;&#109;">&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#109;</a>
+<p>ssh <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#x67;&#x69;&#116;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;">&#103;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;</a>
 输出</p>
 
 <p>PTY allocation request failed on channel 0
