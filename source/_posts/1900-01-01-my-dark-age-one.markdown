@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "我的暗金时代一"
-date: 2014-02-27 22:09:11 +0800
+date: 1900-01-01 00:00:01 +0800
 comments: true
 categories: Archives
 ---
