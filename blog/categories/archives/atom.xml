@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Archives | 找屎啊！]]></title>
   <link href="http://googlegis.github.io/blog/categories/archives/atom.xml" rel="self"/>
   <link href="http://googlegis.github.io/"/>
-  <updated>2014-02-27T23:33:45+08:00</updated>
+  <updated>2014-02-28T14:51:15+08:00</updated>
   <id>http://googlegis.github.io/</id>
   <author>
     <name><![CDATA[Jay]]></name>
@@ -12,30 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[my dark age two]]></title>
-    <link href="http://googlegis.github.io/blog/2014/02/27/my-dark-age-two/"/>
-    <updated>2014-02-27T22:54:57+08:00</updated>
-    <id>http://googlegis.github.io/blog/2014/02/27/my-dark-age-two</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[我的暗金时代一]]></title>
-    <link href="http://googlegis.github.io/blog/2014/02/27/my-dark-age-one/"/>
-    <updated>2014-02-27T22:09:11+08:00</updated>
-    <id>http://googlegis.github.io/blog/2014/02/27/my-dark-age-one</id>
-    <content type="html"><![CDATA[<h1>伤仲永</h1>
-
-<p>仲永生五年，聪敏，父使其学，时逢学校欲改建，大兴土木。</p>
-
-<p>课堂间，仲永忽听“嗡嗡”之声，震耳欲聋，其劲难敌，仲永转首望窗外，乃施工之声，仲永乃非凡人，勉强度过。次日，再入学校，又闻其声，脑中一片空白，如刀划钢板，玻璃相刮。于是，仲永返回家中，用药物镇定方好。然学业非可止。翌日，仲永再入校，刚坐板凳上，又听施工之声，仲永似弹簧跃起，如千针扎股，似万蚁噬心，若油煎刮骨之状，脑浆翻涌。</p>
-
-<p>于是，一代才子，聪捷敏智之方仲永泯然众人矣。其父涕零：既存天地，何生仲永也？</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[在mac下使用github自建博客]]></title>
@@ -81,7 +57,7 @@ ssh-keygen -t rsa -C 你注册github时的email
 
 <p>测试shh:</p>
 
-<p>ssh <a href="&#109;&#97;&#105;&#108;&#x74;&#x6f;&#58;&#103;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#104;&#117;&#98;&#46;&#99;&#111;&#109;">&#x67;&#105;&#x74;&#x40;&#103;&#x69;&#116;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a>
+<p>ssh <a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#58;&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;">&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#109;</a>
 输出</p>
 
 <p>PTY allocation request failed on channel 0
@@ -160,6 +136,62 @@ $ rake generate</p>
 
 <p>修改主题：
  修改头像。   mygravatar id</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[我的暗金时代二]]></title>
+    <link href="http://googlegis.github.io/blog/1900/01/02/my-dark-age-two/"/>
+    <updated>1900-01-02T00:00:01+08:00</updated>
+    <id>http://googlegis.github.io/blog/1900/01/02/my-dark-age-two</id>
+    <content type="html"><![CDATA[<h1>讨债</h1>
+
+<p>爹娘忙过一夏的疲劳，把攒下的500元钱寄给了远方求学的儿子。</p>
+
+<p>这一天，秋风萧瑟，夕阳的余辉把几缕残云照的昏暗，发出淡淡的冷光，</p>
+
+<p>爹娘刚端起饭碗，忽听院里有人喊，</p>
+
+<p>“有人在家吗？”</p>
+
+<p>  不用看，一听这破锣似的嗓门，就知道是好大村长来了。爹听到喊声，先是打了一个冷颤，连忙起身让村长坐下，后面跟着村会计。</p>
+
+<p>  村长腆着肥厚的肚皮很吃力的坐下，看来他已经不习惯板凳了，他未说话先露出两排不怎麽整齐的黄牙，</p>
+
+<p>  “我说，你们家欠的120块钱的提留款该交了吧？”</p>
+
+<p>  “不是100吗？咋变成120了呢？”</p>
+
+<p>  “先前是100，你已经拖了……”</p>
+
+<p>  “六十五天十八小时五十四分”，村会计看着手表连忙应和。</p>
+
+<p>  “对！就是这麽长时间”，村长提高了声调，“要是按照以前黄世仁的算法，少说也得千儿八百的，现在党的政策好了，不准加利加息，跟你要120已经是最低价了。”</p>
+
+<p>  “村长，你又不是不知道，实在是一个子也凑不出来，只有80块钱了，你要是都拿去，我们家就没的吃了。”</p>
+
+<p>  “有多少就先交多少吧，”说完，从父亲手中攫取下那80元钱塞进印有“先进村干部”的公文包里。</p>
+
+<p>  “下月前，一定要交齐！”</p>
+
+<p>   说完，带着正在数钱的村会计朝着“醉香楼”的方向走去。</p>
+
+<p>   天上没有星星，也没有月亮。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[我的暗金时代一]]></title>
+    <link href="http://googlegis.github.io/blog/1900/01/01/my-dark-age-one/"/>
+    <updated>1900-01-01T00:00:01+08:00</updated>
+    <id>http://googlegis.github.io/blog/1900/01/01/my-dark-age-one</id>
+    <content type="html"><![CDATA[<h1>伤仲永</h1>
+
+<p>仲永生五年，聪敏，父使其学，时逢学校欲改建，大兴土木。</p>
+
+<p>课堂间，仲永忽听“嗡嗡”之声，震耳欲聋，其劲难敌，仲永转首望窗外，乃施工之声，仲永乃非凡人，勉强度过。次日，再入学校，又闻其声，脑中一片空白，如刀划钢板，玻璃相刮。于是，仲永返回家中，用药物镇定方好。然学业非可止。翌日，仲永再入校，刚坐板凳上，又听施工之声，仲永似弹簧跃起，如千针扎股，似万蚁噬心，若油煎刮骨之状，脑浆翻涌。</p>
+
+<p>于是，一代才子，聪捷敏智之方仲永泯然众人矣。其父涕零：既存天地，何生仲永也？</p>
 ]]></content>
   </entry>
   
