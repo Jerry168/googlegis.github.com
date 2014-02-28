@@ -3,7 +3,7 @@ layout: post
 title: "我的暗金时代三"
 date: 1900-01-03 15:18:36 +0800
 comments: true
-categories: Archives
+categories: Article
 ---
 # Wide love
  

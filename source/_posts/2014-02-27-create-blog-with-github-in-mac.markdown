@@ -3,7 +3,7 @@ layout: post
 title: "在mac下使用github自建博客"
 date: 2014-02-27 21:42:50 +0800
 comments: true
-categories: Archives
+categories: Mac
 ---
  参考： http://octopress.org/docs/setup/rvm/
 
