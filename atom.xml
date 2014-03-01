@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[找屎啊！]]></title>
-  <link href="http://googlegis.github.io/atom.xml" rel="self"/>
-  <link href="http://googlegis.github.io/"/>
-  <updated>2014-03-01T09:29:52+08:00</updated>
-  <id>http://googlegis.github.io/</id>
+  <link href="http://googlegis.github.com/atom.xml" rel="self"/>
+  <link href="http://googlegis.github.com/"/>
+  <updated>2014-03-01T09:33:19+08:00</updated>
+  <id>http://googlegis.github.com/</id>
   <author>
     <name><![CDATA[Jay]]></name>
     <email><![CDATA[googlegis@hotmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[在mac下使用github自建博客]]></title>
-    <link href="http://googlegis.github.io/blog/2014/02/27/create-blog-with-github-in-mac/"/>
+    <link href="http://googlegis.github.com/blog/2014/02/27/create-blog-with-github-in-mac/"/>
     <updated>2014-02-27T21:42:50+08:00</updated>
-    <id>http://googlegis.github.io/blog/2014/02/27/create-blog-with-github-in-mac</id>
+    <id>http://googlegis.github.com/blog/2014/02/27/create-blog-with-github-in-mac</id>
     <content type="html"><![CDATA[<p> 参考： <a href="http://octopress.org/docs/setup/rvm/">http://octopress.org/docs/setup/rvm/</a></p>
 
 <p>一、 安装Ruby环境</p>
@@ -57,7 +57,7 @@ ssh-keygen -t rsa -C 你注册github时的email
 
 <p>测试shh:</p>
 
-<p>ssh <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x67;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#x6f;&#x6d;">&#x67;&#x69;&#116;&#64;&#103;&#x69;&#116;&#104;&#x75;&#98;&#x2e;&#x63;&#111;&#x6d;</a>
+<p>ssh <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#117;&#x62;&#x2e;&#99;&#111;&#x6d;">&#x67;&#105;&#116;&#x40;&#103;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#111;&#x6d;</a>
 输出</p>
 
 <p>PTY allocation request failed on channel 0
@@ -141,9 +141,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[电影版《白鹿原》]]></title>
-    <link href="http://googlegis.github.io/blog/2013/04/28/white-deer-platform/"/>
+    <link href="http://googlegis.github.com/blog/2013/04/28/white-deer-platform/"/>
     <updated>2013-04-28T19:45:11+08:00</updated>
-    <id>http://googlegis.github.io/blog/2013/04/28/white-deer-platform</id>
+    <id>http://googlegis.github.com/blog/2013/04/28/white-deer-platform</id>
     <content type="html"><![CDATA[<h1>&mdash;&mdash;-完整版的田小娥偷情记</h1>
 
 <p> 看了国内上映的#白鹿原#，310分钟的白鹿原剪成了150分钟的田小娥偷情记，剪成了建国大业，一个时代一个镜头，打一枪换一个地方，只能说@王全安 你辛苦了。</p>
@@ -160,9 +160,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[愚人节死神不要和我开玩笑]]></title>
-    <link href="http://googlegis.github.io/blog/2013/04/01/abtou-death/"/>
+    <link href="http://googlegis.github.com/blog/2013/04/01/abtou-death/"/>
     <updated>2013-04-01T22:33:24+08:00</updated>
-    <id>http://googlegis.github.io/blog/2013/04/01/abtou-death</id>
+    <id>http://googlegis.github.com/blog/2013/04/01/abtou-death</id>
     <content type="html"><![CDATA[<p>4.1 愚人节，10年前，张国荣去世，只留下程蝶衣和那首《当爱已成往事》。</p>
 
 <p>今天死神也想和我开玩笑吗？</p>
@@ -185,9 +185,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[乡愁]]></title>
-    <link href="http://googlegis.github.io/blog/2013/03/11/the-feel-of-miss-home/"/>
+    <link href="http://googlegis.github.com/blog/2013/03/11/the-feel-of-miss-home/"/>
     <updated>2013-03-11T22:29:12+08:00</updated>
-    <id>http://googlegis.github.io/blog/2013/03/11/the-feel-of-miss-home</id>
+    <id>http://googlegis.github.com/blog/2013/03/11/the-feel-of-miss-home</id>
     <content type="html"><![CDATA[<h2>小时候,</h2>
 
 <h2>乡愁不知道是一个什么玩意,</h2>
@@ -220,15 +220,15 @@ $ rake generate</p>
 
 <h2>娃子在这头.</h2>
 
-<p> <img src="http://googlegis.github.io/images/misshome.jpg"></p>
+<p> <img src="http://googlegis.github.com/images/misshome.jpg"></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[春夏秋冬又一春]]></title>
-    <link href="http://googlegis.github.io/blog/2013/03/07/another-spring/"/>
+    <link href="http://googlegis.github.com/blog/2013/03/07/another-spring/"/>
     <updated>2013-03-07T22:26:24+08:00</updated>
-    <id>http://googlegis.github.io/blog/2013/03/07/another-spring</id>
+    <id>http://googlegis.github.com/blog/2013/03/07/another-spring</id>
     <content type="html"><![CDATA[<p>小女子二八佳人我绣楼坐，
 朱唇轻点思念我的郎。
 自从那年离家去，
@@ -323,9 +323,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[小马过河]]></title>
-    <link href="http://googlegis.github.io/blog/2012/07/28/horse-cross-the-river/"/>
+    <link href="http://googlegis.github.com/blog/2012/07/28/horse-cross-the-river/"/>
     <updated>2012-07-28T21:39:57+08:00</updated>
-    <id>http://googlegis.github.io/blog/2012/07/28/horse-cross-the-river</id>
+    <id>http://googlegis.github.com/blog/2012/07/28/horse-cross-the-river</id>
     <content type="html"><![CDATA[<h3>泰囧票房的秘密</h3>
 
 <p>小马和他的妈妈住在小河边。他过的很快乐，时光飞快地过去了。一个周末，妈妈把小马叫到身边说：“小马，今天南方周末，又供暖了，你作业做完了的话。今天可以到对面电影院里去看电影哦。”</p>
@@ -348,9 +348,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[照顾宝宝那些事]]></title>
-    <link href="http://googlegis.github.io/blog/2012/02/01/sth-about-take-care-of-baby/"/>
+    <link href="http://googlegis.github.com/blog/2012/02/01/sth-about-take-care-of-baby/"/>
     <updated>2012-02-01T22:47:21+08:00</updated>
-    <id>http://googlegis.github.io/blog/2012/02/01/sth-about-take-care-of-baby</id>
+    <id>http://googlegis.github.com/blog/2012/02/01/sth-about-take-care-of-baby</id>
     <content type="html"><![CDATA[<ul>
 <li><p>刚生下来的婴儿第一顿喂白开水。</p></li>
 <li><p>一般剖腹产的婴儿胃里和肺里有羊水，吐水和打喷嚏是正常的。</p>
@@ -399,9 +399,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[12.27最终版本]]></title>
-    <link href="http://googlegis.github.io/blog/2011/12/27/good-names/"/>
+    <link href="http://googlegis.github.com/blog/2011/12/27/good-names/"/>
     <updated>2011-12-27T21:47:58+08:00</updated>
-    <id>http://googlegis.github.io/blog/2011/12/27/good-names</id>
+    <id>http://googlegis.github.com/blog/2011/12/27/good-names</id>
     <content type="html"><![CDATA[<h3>截至至2011.12.27日，名字从开始到现在已有几十之多。先去掉忌讳的字词，将选中的名字列如下。起名字真的很伤脑，思前后而顾左右。</h3>
 
 <h3>特别感谢三舅，嫂子，哥，李娜，张秀云，老班长，还有准妈妈陈薪玲。感谢所有关心的人。大家一律发小红花一朵。</h3>
@@ -456,9 +456,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[文化不文化]]></title>
-    <link href="http://googlegis.github.io/blog/2011/11/17/not-only-culture/"/>
+    <link href="http://googlegis.github.com/blog/2011/11/17/not-only-culture/"/>
     <updated>2011-11-17T22:24:38+08:00</updated>
-    <id>http://googlegis.github.io/blog/2011/11/17/not-only-culture</id>
+    <id>http://googlegis.github.com/blog/2011/11/17/not-only-culture</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>最近重听刘宝瑞老先生的相声，感叹文字之妙，文化之深。
@@ -520,9 +520,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[什么算是教育好了孩子]]></title>
-    <link href="http://googlegis.github.io/blog/2011/11/01/how-to-tell-child/"/>
+    <link href="http://googlegis.github.com/blog/2011/11/01/how-to-tell-child/"/>
     <updated>2011-11-01T22:51:45+08:00</updated>
-    <id>http://googlegis.github.io/blog/2011/11/01/how-to-tell-child</id>
+    <id>http://googlegis.github.com/blog/2011/11/01/how-to-tell-child</id>
     <content type="html"><![CDATA[<p>我们家孩子，还没有出生，但是和所有的父母都一样的就是想到了教育问题。到底教育成什么样子了才算是教育好了呢？</p>
 
 <p>每每和家人聊起了别人家的孩子如何如何好，别人家的孩子如何如何孬，总是豪情万丈，我以后的孩子肯定不会是这样，我要让他好学习，懂礼貌，尊老爱幼。。。</p>
@@ -553,9 +553,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[桂花郎求桂花黄]]></title>
-    <link href="http://googlegis.github.io/blog/2011/09/29/boy-and-flowers/"/>
+    <link href="http://googlegis.github.com/blog/2011/09/29/boy-and-flowers/"/>
     <updated>2011-09-29T22:04:41+08:00</updated>
-    <id>http://googlegis.github.io/blog/2011/09/29/boy-and-flowers</id>
+    <id>http://googlegis.github.com/blog/2011/09/29/boy-and-flowers</id>
     <content type="html"><![CDATA[<h4>桂花巷头桂花黄，</h4>
 
 <h4>巷尾又见桂花郎，</h4>
@@ -588,15 +588,15 @@ $ rake generate</p>
 
 <h4>年年复求桂花黄。</h4>
 
-<p> <img src="http://googlegis.github.io/images/flowers.jpeg"></p>
+<p> <img src="http://googlegis.github.com/images/flowers.jpeg"></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[再过二十年我们来相会]]></title>
-    <link href="http://googlegis.github.io/blog/2011/09/19/we-will-meet-together/"/>
+    <link href="http://googlegis.github.com/blog/2011/09/19/we-will-meet-together/"/>
     <updated>2011-09-19T21:44:18+08:00</updated>
-    <id>http://googlegis.github.io/blog/2011/09/19/we-will-meet-together</id>
+    <id>http://googlegis.github.com/blog/2011/09/19/we-will-meet-together</id>
     <content type="html"><![CDATA[<p>2011.10.3日，大学同学年级聚会，同回母校，也是毕业七年之后的首次大聚会，但是不能亲去。</p>
 
 <p>特做小诗一首，祝天涯海角的同门还是同门。</p>
@@ -629,9 +629,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[你们都吃人]]></title>
-    <link href="http://googlegis.github.io/blog/2011/09/09/all-eat-people/"/>
+    <link href="http://googlegis.github.com/blog/2011/09/09/all-eat-people/"/>
     <updated>2011-09-09T21:42:00+08:00</updated>
-    <id>http://googlegis.github.io/blog/2011/09/09/all-eat-people</id>
+    <id>http://googlegis.github.com/blog/2011/09/09/all-eat-people</id>
     <content type="html"><![CDATA[<p>我害怕，我身上疼，你们都吃人。</p>
 
 <p>你是谁，你是谁，你是不是要吃我？</p>
@@ -718,9 +718,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[谁救谁的命]]></title>
-    <link href="http://googlegis.github.io/blog/2011/09/07/save-people-life/"/>
+    <link href="http://googlegis.github.com/blog/2011/09/07/save-people-life/"/>
     <updated>2011-09-07T21:34:44+08:00</updated>
-    <id>http://googlegis.github.io/blog/2011/09/07/save-people-life</id>
+    <id>http://googlegis.github.com/blog/2011/09/07/save-people-life</id>
     <content type="html"><![CDATA[<p>最近一直没有用电视，昨天也没有上网，所以一直不知道动车追尾这件事。直到今天才看到。</p>
 
 <p>30多人的死亡，200多人的重伤，真的感觉到难过，压抑，有种说不出的痛。浑身的颤抖和愤怒。</p>
@@ -757,9 +757,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[辞去]]></title>
-    <link href="http://googlegis.github.io/blog/2011/08/19/gone/"/>
+    <link href="http://googlegis.github.com/blog/2011/08/19/gone/"/>
     <updated>2011-08-19T21:29:57+08:00</updated>
-    <id>http://googlegis.github.io/blog/2011/08/19/gone</id>
+    <id>http://googlegis.github.com/blog/2011/08/19/gone</id>
     <content type="html"><![CDATA[<ul>
 <li><h2>青板盖棺土掩身</h2></li>
 <li><h2>徒留花香绕冢坟</h2></li>
@@ -772,9 +772,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[老来难]]></title>
-    <link href="http://googlegis.github.io/blog/2011/08/17/hard-to-old/"/>
+    <link href="http://googlegis.github.com/blog/2011/08/17/hard-to-old/"/>
     <updated>2011-08-17T21:27:39+08:00</updated>
-    <id>http://googlegis.github.io/blog/2011/08/17/hard-to-old</id>
+    <id>http://googlegis.github.com/blog/2011/08/17/hard-to-old</id>
     <content type="html"><![CDATA[<h2>仁义礼耻廉</h2>
 
 <h2>百善孝为先</h2>
@@ -787,9 +787,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[宝宝第一次动了]]></title>
-    <link href="http://googlegis.github.io/blog/2011/08/07/first-of-baby/"/>
+    <link href="http://googlegis.github.com/blog/2011/08/07/first-of-baby/"/>
     <updated>2011-08-07T22:44:08+08:00</updated>
-    <id>http://googlegis.github.io/blog/2011/08/07/first-of-baby</id>
+    <id>http://googlegis.github.com/blog/2011/08/07/first-of-baby</id>
     <content type="html"><![CDATA[<pre><code>昨天有预报说，梅超风要来，结果是与上海是擦肩而过，坐等也没等到。不过，却等来了胎儿的第一次胎动。昨天早晨，醒来时老婆说，宝宝动了，能感受到，慌的我脚忙手乱的就爬在肚子上听，仅仅是一下，有点向外鼓的感觉，耳根都能感到动静。然后就掩旗息鼓，难以寻觅。于是，不死心的时不时爬在老婆肚子上听，一直到睡觉，就像台风一样都没有出现。
 
 今天早晨，早早起来，准备和宝宝进行交流，老婆醒来告诉说又有动静了。哈哈，抓起手机准备测心跳。把耳朵贴上去，随着肚子里的声音，一震一震的，能够明显的感觉到是另一个心跳，高兴的忘乎所以，测了两次，才70多，好像不太对，后来上网查才知道，要有专门的仪器听的才准。我估计是把心跳 胎动 消化 羊水的声音听在一起了。哈哈。不过不要紧，老婆刚去医院查的胎心140多呢。
@@ -803,9 +803,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[中元悼吾妹火青]]></title>
-    <link href="http://googlegis.github.io/blog/2011/08/04/my-lovely-sister/"/>
+    <link href="http://googlegis.github.com/blog/2011/08/04/my-lovely-sister/"/>
     <updated>2011-08-04T21:25:03+08:00</updated>
-    <id>http://googlegis.github.io/blog/2011/08/04/my-lovely-sister</id>
+    <id>http://googlegis.github.com/blog/2011/08/04/my-lovely-sister</id>
     <content type="html"><![CDATA[<h3>卿本绛洞一花仙</h3>
 
 <h3>懵懂出世入尘凡</h3>
@@ -820,9 +820,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[甲流和瘟疫]]></title>
-    <link href="http://googlegis.github.io/blog/2009/12/07/socity-and-people/"/>
+    <link href="http://googlegis.github.com/blog/2009/12/07/socity-and-people/"/>
     <updated>2009-12-07T20:50:23+08:00</updated>
-    <id>http://googlegis.github.io/blog/2009/12/07/socity-and-people</id>
+    <id>http://googlegis.github.com/blog/2009/12/07/socity-and-people</id>
     <content type="html"><![CDATA[<p>前两天给家里打电话，说到目前正在流行以及将会更加流行的甲流，说到疾病扩散，说到病人而死，老妈告诉我说，过去这种情况就叫瘟疫。</p>
 
 <p>瘟疫，很可怕的名字，一直认为只有封建社会那种古代生活才会有，百姓背井离乡，死尸遍布街道，好像那个天下粮仓。
@@ -834,9 +834,9 @@ $ rake generate</p>
   
   <entry>
     <title type="html"><![CDATA[李米的猜想-爱]]></title>
-    <link href="http://googlegis.github.io/blog/2009/10/19/the-story-of-limi/"/>
+    <link href="http://googlegis.github.com/blog/2009/10/19/the-story-of-limi/"/>
     <updated>2009-10-19T20:45:48+08:00</updated>
-    <id>http://googlegis.github.io/blog/2009/10/19/the-story-of-limi</id>
+    <id>http://googlegis.github.com/blog/2009/10/19/the-story-of-limi</id>
     <content type="html"><![CDATA[<p>对李米的猜想觊觎许久，老想找个时间好好看看，对周迅的表演也是早就佩服至极，可是还是一直想看，老婆也和我提过很多次，说是要下个李米的猜想回来看看，今天突然找到了这个片子，于是很完整的看了一遍。不得不佩服导演和演员，他们将一个爱情故事演绎的如此完美，如此凄凉。</p>
 
 <p>对一个的爱有多深，不知道，只有自己做到了才能说，我爱你。爱你就是要负责任的，不是随便说说哄女孩子开心的。</p>
