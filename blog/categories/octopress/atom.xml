@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Mac | 找屎啊！]]></title>
-  <link href="http://googlegis.github.com/blog/categories/mac/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Octopress | 找屎啊！]]></title>
+  <link href="http://googlegis.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://googlegis.github.com/"/>
-  <updated>2014-03-01T10:07:20+08:00</updated>
+  <updated>2014-03-01T14:12:06+08:00</updated>
   <id>http://googlegis.github.com/</id>
   <author>
     <name><![CDATA[Jay]]></name>
@@ -12,6 +12,97 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress中Disqus设置]]></title>
+    <link href="http://googlegis.github.com/blog/2014/03/01/make-disqus-visable/"/>
+    <updated>2014-03-01T10:49:47+08:00</updated>
+    <id>http://googlegis.github.com/blog/2014/03/01/make-disqus-visable</id>
+    <content type="html"><![CDATA[<h4>&mdash; 让 disqus显示出来</h4>
+
+<p>  特意为Disqus写一篇，是因为过程中出现了错误，或者说我没有理解透别人说的意思。</p>
+
+<p>   网上大多数的教程很简单，说是在Disqus注册个账号，然后把 short_name 写入 _config.yml中，我是菜鸟，写入了还是不能显示出来。</p>
+
+<p>   <img src="/images/disqus.png"></p>
+
+<p>   就是上图中画红色圈方框的部分没显示。</p>
+
+<p>   擦！
+   连续查了两天资料，终于搞定。</p>
+
+<ol>
+<li><p>. disqus注册时，Shortname 随意写，Website Name 随意写， Website URL: 写入你的网站地址，如果你使用的github，那就写入你的Page Site： ***.github.com</p></li>
+<li><p>. 如果还是出不来，请检查这两个文件。 /Source/<em>layout/page.html 和 /Source/</em>layout/post.html，  查看这部分：<br/>
+<code>  
+&lt;section id="comment"&gt;  
+&lt;h1 class="title"&gt;Comments&lt;/h1&gt;  
+&lt;div id="disqus_thread" aria-live="polite"&gt;<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></p></li>
+</ol>
+
+
+<p> 然后查看 _includes/post/disqus_thread.html 这个里面的内容，如果仅仅是下面这个部分，
+```javascript</p>
+
+<pre><code>&lt;noscript&gt;Please enable JavaScript to view the &lt;a href="http://disqus.com/? ref_noscript"&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+</code></pre>
+
+<p>```<br/>
+   那就说明，该修改 section 这部分代码了。</p>
+
+<p>   查看 _includes/disqus.html 文件，查看源码，如果如下：
+<code>``javascript
+ 
+  
+  <script type="text/javascript"></p>
+
+<pre><code>  var disqus_shortname = 'googlegis';
+  
+    
+    var disqus_script = 'count.js';
+  
+(function () {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</code></pre>
+
+<p></script>
+
+```
+  请修改 section 中的代码为：</p>
+
+<p>```javascript
+   <section id="comment"></p>
+
+<pre><code>&lt;h1 class="title"&gt;Comments&lt;/h1&gt;
+&lt;div id="disqus_thread" aria-live="polite"&gt;
+
+<script type="text/javascript">
+      var disqus_shortname = 'googlegis';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+  &lt;/div&gt;
+</code></pre>
+
+<p></section>
+```
+ 然后 rake generate ; rake deploy 查看页面了。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[在mac下使用github自建博客]]></title>
@@ -57,7 +148,7 @@ ssh-keygen -t rsa -C 你注册github时的email
 
 <p>测试shh:</p>
 
-<p>ssh <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#58;&#x67;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#x6d;">&#103;&#x69;&#x74;&#64;&#103;&#x69;&#x74;&#x68;&#117;&#x62;&#x2e;&#99;&#111;&#x6d;</a>
+<p>ssh <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#103;&#x69;&#x74;&#64;&#103;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;">&#x67;&#x69;&#116;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#x2e;&#99;&#x6f;&#x6d;</a>
 输出</p>
 
 <p>PTY allocation request failed on channel 0

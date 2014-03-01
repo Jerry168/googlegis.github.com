@@ -9,8 +9,7 @@
 	<meta name="author" content="Jay">
 
 	
-	<meta name="description" content="Feb 27th, 2014 Mac 在mac下使用github自建博客 参考： http://octopress.org/docs/setup/rvm/ 一、 安装Ruby环境 过程：
-安装rvm 执行 curl -L https://get.rvm.io | bash -s stable — &hellip;">
+	<meta name="description" content="Mar 1st, 2014 Octopress Octopress中Disqus设置 &mdash; 让 disqus显示出来 特意为Disqus写一篇，是因为过程中出现了错误，或者说我没有理解透别人说的意思。 网上大多数的教程很简单，说是在Disqus注册个账号，然后把 short_name &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -104,11 +103,150 @@
   
 
 
+<time datetime="2014-03-01T10:49:47+08:00" data-updated="true" itemprop="datePublished">Mar 1<span>st</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/octopress/'>Octopress</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/03/01/make-disqus-visable/" itemprop="url">Octopress中Disqus设置</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<h4>&mdash; 让 disqus显示出来</h4>
+
+<p>  特意为Disqus写一篇，是因为过程中出现了错误，或者说我没有理解透别人说的意思。</p>
+
+<p>   网上大多数的教程很简单，说是在Disqus注册个账号，然后把 short_name 写入 _config.yml中，我是菜鸟，写入了还是不能显示出来。</p>
+
+<p>   <img src="/images/disqus.png"></p>
+
+<p>   就是上图中画红色圈方框的部分没显示。</p>
+
+<p>   擦！
+   连续查了两天资料，终于搞定。</p>
+
+<ol>
+<li><p>. disqus注册时，Shortname 随意写，Website Name 随意写， Website URL: 写入你的网站地址，如果你使用的github，那就写入你的Page Site： ***.github.com</p></li>
+<li><p>. 如果还是出不来，请检查这两个文件。 /Source/<em>layout/page.html 和 /Source/</em>layout/post.html，  查看这部分：</p></li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>   &lt;section id="comment"&gt;  
+</span><span class='line'>    &lt;h1 class="title"&gt;Comments&lt;/h1&gt;  
+</span><span class='line'>    &lt;div id="disqus_thread" aria-live="polite"&gt;<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  &lt;/div&gt;
+</span><span class='line'>&lt;/section&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p> 然后查看 _includes/post/disqus_thread.html 这个里面的内容，如果仅仅是下面这个部分，</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="o">&lt;</span><span class="nx">noscript</span><span class="o">&gt;</span><span class="nx">Please</span> <span class="nx">enable</span> <span class="nx">JavaScript</span> <span class="nx">to</span> <span class="nx">view</span> <span class="nx">the</span> <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;http://disqus.com/? ref_noscript&quot;</span><span class="o">&gt;</span><span class="nx">comments</span> <span class="nx">powered</span> <span class="nx">by</span> <span class="nx">Disqus</span><span class="p">.</span><span class="o">&lt;</span><span class="err">/a&gt;&lt;/noscript&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+   那就说明，该修改 section 这部分代码了。</p>
+
+<p>   查看 _includes/disqus.html 文件，查看源码，如果如下：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'> <span class="p">{</span><span class="o">%</span> <span class="nx">comment</span> <span class="o">%</span><span class="p">}</span> <span class="nx">Load</span> <span class="nx">script</span> <span class="k">if</span> <span class="nx">disquss</span> <span class="nx">comments</span> <span class="nx">are</span> <span class="nx">enabled</span> <span class="nx">and</span> <span class="err">`</span><span class="nx">page</span><span class="p">.</span><span class="nx">comments</span><span class="err">`</span>
+</span><span class='line'>  <span class="nx">is</span> <span class="nx">either</span> <span class="nx">empty</span> <span class="p">(</span><span class="nx">index</span><span class="p">)</span> <span class="nx">or</span> <span class="nx">set</span> <span class="nx">to</span> <span class="kc">true</span> <span class="p">{</span><span class="o">%</span> <span class="nx">endcomment</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'>  <span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="nx">site</span><span class="p">.</span><span class="nx">disqus_short_name</span> <span class="nx">and</span> <span class="nx">page</span><span class="p">.</span><span class="nx">comments</span> <span class="o">!=</span> <span class="kc">false</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">disqus_shortname</span> <span class="o">=</span> <span class="s1">&#39;googlegis&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="nx">page</span><span class="p">.</span><span class="nx">comments</span> <span class="o">==</span> <span class="kc">true</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'>        <span class="p">{</span><span class="o">%</span> <span class="nx">comment</span> <span class="o">%</span><span class="p">}</span> <span class="err">`</span><span class="nx">page</span><span class="p">.</span><span class="nx">comments</span><span class="err">`</span> <span class="nx">can</span> <span class="nx">be</span> <span class="nx">only</span> <span class="nx">be</span> <span class="nx">set</span> <span class="nx">to</span> <span class="kc">true</span> <span class="nx">on</span> <span class="nx">pages</span><span class="o">/</span><span class="nx">posts</span><span class="p">,</span> <span class="nx">so</span> <span class="nx">we</span> <span class="nx">embed</span> <span class="nx">the</span> <span class="nx">comments</span> <span class="nx">here</span><span class="p">.</span> <span class="p">{</span><span class="o">%</span> <span class="nx">endcomment</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'>        <span class="c1">// var disqus_developer = 1;</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">disqus_identifier</span> <span class="o">=</span> <span class="s1">&#39;http://googlegis.github.com/blog/2014/03/01/make-disqus-visable/&#39;</span><span class="p">;</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">disqus_url</span> <span class="o">=</span> <span class="s1">&#39;http://googlegis.github.com/blog/2014/03/01/make-disqus-visable/&#39;</span><span class="p">;</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">disqus_script</span> <span class="o">=</span> <span class="s1">&#39;embed.js&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">{</span><span class="o">%</span> <span class="k">else</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'>        <span class="p">{</span><span class="o">%</span> <span class="nx">comment</span> <span class="o">%</span><span class="p">}</span> <span class="nx">As</span> <span class="err">`</span><span class="nx">page</span><span class="p">.</span><span class="nx">comments</span><span class="err">`</span> <span class="nx">is</span> <span class="nx">empty</span><span class="p">,</span> <span class="nx">we</span> <span class="nx">must</span> <span class="nx">be</span> <span class="nx">on</span> <span class="nx">the</span> <span class="nx">index</span> <span class="nx">page</span><span class="p">.</span> <span class="p">{</span><span class="o">%</span> <span class="nx">endcomment</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">disqus_script</span> <span class="o">=</span> <span class="s1">&#39;count.js&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">{</span><span class="o">%</span> <span class="nx">endif</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'>    <span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">dsq</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">);</span> <span class="nx">dsq</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="s1">&#39;text/javascript&#39;</span><span class="p">;</span> <span class="nx">dsq</span><span class="p">.</span><span class="nx">async</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">dsq</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">&#39;http://&#39;</span> <span class="o">+</span> <span class="nx">disqus_shortname</span> <span class="o">+</span> <span class="s1">&#39;.disqus.com/&#39;</span> <span class="o">+</span> <span class="nx">disqus_script</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;head&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">||</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">dsq</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}());</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span><span class='line'><span class="p">{</span><span class="o">%</span> <span class="nx">endif</span> <span class="o">%</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>  请修改 section 中的代码为：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'>   <span class="o">&lt;</span><span class="nx">section</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;comment&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="nx">h1</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&quot;title&quot;</span><span class="o">&gt;</span><span class="nx">Comments</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;disqus_thread&quot;</span> <span class="nx">aria</span><span class="o">-</span><span class="nx">live</span><span class="o">=</span><span class="s2">&quot;polite&quot;</span><span class="o">&gt;</span><span class="p">{</span><span class="o">%</span> <span class="nx">include</span> <span class="nx">disqus</span><span class="p">.</span><span class="nx">html</span> <span class="o">%</span><span class="p">}</span>  <span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/section&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> 然后 rake generate ; rake deploy 查看页面了。</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
 <time datetime="2014-02-27T21:42:50+08:00" data-updated="true" itemprop="datePublished">Feb 27<span>th</span>, 2014</time></div>
 		<div class="tags">
 
 
-	<a class='category' href='/blog/categories/mac/'>Mac</a>
+	<a class='category' href='/blog/categories/octopress/'>Octopress</a>
 
 
 </div>
@@ -155,7 +293,7 @@ ssh-keygen -t rsa -C 你注册github时的email
 
 <p>测试shh:</p>
 
-<p>ssh <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#103;&#x69;&#x74;&#64;&#103;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;">&#103;&#105;&#x74;&#64;&#103;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#109;</a>
+<p>ssh <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x67;&#105;&#116;&#64;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#111;&#x6d;">&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#116;&#104;&#117;&#98;&#46;&#x63;&#x6f;&#109;</a>
 输出</p>
 
 <p>PTY allocation request failed on channel 0
@@ -817,65 +955,6 @@ $ rake generate</p>
 <p>腹中空空臭皮囊，魑魅勾搭欺魍魉。</p>
 
 <p>轻舟难越千河度，蒙心存世成魔王。</p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-11-01T22:51:45+08:00" data-updated="true" itemprop="datePublished">Nov 1<span>st</span>, 2011</time></div>
-		<div class="tags">
-
-
-	<a class='category' href='/blog/categories/article/'>Article</a>
-
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2011/11/01/how-to-tell-child/" itemprop="url">什么算是教育好了孩子</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>我们家孩子，还没有出生，但是和所有的父母都一样的就是想到了教育问题。到底教育成什么样子了才算是教育好了呢？</p>
-
-<p>每每和家人聊起了别人家的孩子如何如何好，别人家的孩子如何如何孬，总是豪情万丈，我以后的孩子肯定不会是这样，我要让他好学习，懂礼貌，尊老爱幼。。。</p>
-
-<p>其实这是什么呢？</p>
-
-<p>不过是一种借口和托词罢了，在教育孩子在小小年纪的时候就做到这些，首先想一想自己有没有做到呢？</p>
-
-<p>就拿这个贪嘴来说，谁说谁烦，到谁家谁讨厌，一说就是谁家孩子贪嘴吃，到别人家里到处找东西吃。唉。。。</p>
-
-<p>吃是孩子的本性，孩子总是自己的亲，到时总会有这种或那种原因，迫使自己改变管教的初衷。</p>
-
-<p>天下的父母真的不容易，既要成家立业，还要子女教育，如果孩子不孝顺了，真是冤屈没处申啊。</p>
-
-<p>我和老婆总是说，孩子不希望漂亮，不希望学习好，只要健康，只要开心就好。可是谁能保证的他的健康和平安呢。只能尽个人努力吧。希望他能健康和开心。</p>
-
-<p>有事没事的时候想，孩子，不要你大富大贵，不要你光宗耀祖，不要你出人头地，喜欢做你的事情，开心就好。</p>
-
-<p>那什么算是教育好了孩子，每个人都有自己的观点和理由，</p>
-
-<p>70亿个人有70个哈姆利特，70亿个人有70个观点和理由。</p>
-
-<p>目前所能做的，就是好好的过好自己的每一天，过好生活。</p>
-
-<p>力所能及的给孩子一个开心的童年。以后的生活，以后再说吧。</p>
 
 		
 		

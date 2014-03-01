@@ -1,0 +1,248 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Octopress中Disqus设置 - 找屎啊！</title>
+	<meta name="author" content="Jay">
+
+	
+	<meta name="description" content="Octopress中Disqus设置 &mdash; 让 disqus显示出来 特意为Disqus写一篇，是因为过程中出现了错误，或者说我没有理解透别人说的意思。 网上大多数的教程很简单，说是在Disqus注册个账号，然后把 short_name 写入 _config.yml中，我是菜鸟， &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="找屎啊！" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://googlegis.github.com/blog/2014/03/01/make-disqus-visable/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("googlegis@hotmail.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+	
+</div>
+
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/blog/archives">Archives</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+			<a class="email" href="mailto:googlegis@hotmail.com" title="Email">Email</a>
+		
+		
+		
+		
+			<a class="twitter" href="http://twitter.com/googlegis" title="Twitter">Twitter</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Octopress中Disqus设置</h1>
+	<div class="entry-content" itemprop="articleBody"><h4>&mdash; 让 disqus显示出来</h4>
+
+<p>  特意为Disqus写一篇，是因为过程中出现了错误，或者说我没有理解透别人说的意思。</p>
+
+<p>   网上大多数的教程很简单，说是在Disqus注册个账号，然后把 short_name 写入 _config.yml中，我是菜鸟，写入了还是不能显示出来。</p>
+
+<p>   <img src="/images/disqus.png"></p>
+
+<p>   就是上图中画红色圈方框的部分没显示。</p>
+
+<p>   擦！
+   连续查了两天资料，终于搞定。</p>
+
+<ol>
+<li><p>. disqus注册时，Shortname 随意写，Website Name 随意写， Website URL: 写入你的网站地址，如果你使用的github，那就写入你的Page Site： ***.github.com</p></li>
+<li><p>. 如果还是出不来，请检查这两个文件。 /Source/<em>layout/page.html 和 /Source/</em>layout/post.html，  查看这部分：</p></li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>   &lt;section id="comment"&gt;  
+</span><span class='line'>    &lt;h1 class="title"&gt;Comments&lt;/h1&gt;  
+</span><span class='line'>    &lt;div id="disqus_thread" aria-live="polite"&gt;<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  &lt;/div&gt;
+</span><span class='line'>&lt;/section&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p> 然后查看 _includes/post/disqus_thread.html 这个里面的内容，如果仅仅是下面这个部分，</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="o">&lt;</span><span class="nx">noscript</span><span class="o">&gt;</span><span class="nx">Please</span> <span class="nx">enable</span> <span class="nx">JavaScript</span> <span class="nx">to</span> <span class="nx">view</span> <span class="nx">the</span> <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;http://disqus.com/? ref_noscript&quot;</span><span class="o">&gt;</span><span class="nx">comments</span> <span class="nx">powered</span> <span class="nx">by</span> <span class="nx">Disqus</span><span class="p">.</span><span class="o">&lt;</span><span class="err">/a&gt;&lt;/noscript&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+   那就说明，该修改 section 这部分代码了。</p>
+
+<p>   查看 _includes/disqus.html 文件，查看源码，如果如下：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'> <span class="p">{</span><span class="o">%</span> <span class="nx">comment</span> <span class="o">%</span><span class="p">}</span> <span class="nx">Load</span> <span class="nx">script</span> <span class="k">if</span> <span class="nx">disquss</span> <span class="nx">comments</span> <span class="nx">are</span> <span class="nx">enabled</span> <span class="nx">and</span> <span class="err">`</span><span class="nx">page</span><span class="p">.</span><span class="nx">comments</span><span class="err">`</span>
+</span><span class='line'>  <span class="nx">is</span> <span class="nx">either</span> <span class="nx">empty</span> <span class="p">(</span><span class="nx">index</span><span class="p">)</span> <span class="nx">or</span> <span class="nx">set</span> <span class="nx">to</span> <span class="kc">true</span> <span class="p">{</span><span class="o">%</span> <span class="nx">endcomment</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'>  <span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="nx">site</span><span class="p">.</span><span class="nx">disqus_short_name</span> <span class="nx">and</span> <span class="nx">page</span><span class="p">.</span><span class="nx">comments</span> <span class="o">!=</span> <span class="kc">false</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">disqus_shortname</span> <span class="o">=</span> <span class="s1">&#39;googlegis&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="nx">page</span><span class="p">.</span><span class="nx">comments</span> <span class="o">==</span> <span class="kc">true</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'>        <span class="p">{</span><span class="o">%</span> <span class="nx">comment</span> <span class="o">%</span><span class="p">}</span> <span class="err">`</span><span class="nx">page</span><span class="p">.</span><span class="nx">comments</span><span class="err">`</span> <span class="nx">can</span> <span class="nx">be</span> <span class="nx">only</span> <span class="nx">be</span> <span class="nx">set</span> <span class="nx">to</span> <span class="kc">true</span> <span class="nx">on</span> <span class="nx">pages</span><span class="o">/</span><span class="nx">posts</span><span class="p">,</span> <span class="nx">so</span> <span class="nx">we</span> <span class="nx">embed</span> <span class="nx">the</span> <span class="nx">comments</span> <span class="nx">here</span><span class="p">.</span> <span class="p">{</span><span class="o">%</span> <span class="nx">endcomment</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'>        <span class="c1">// var disqus_developer = 1;</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">disqus_identifier</span> <span class="o">=</span> <span class="s1">&#39;http://googlegis.github.com/blog/2014/03/01/make-disqus-visable/&#39;</span><span class="p">;</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">disqus_url</span> <span class="o">=</span> <span class="s1">&#39;http://googlegis.github.com/blog/2014/03/01/make-disqus-visable/&#39;</span><span class="p">;</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">disqus_script</span> <span class="o">=</span> <span class="s1">&#39;embed.js&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">{</span><span class="o">%</span> <span class="k">else</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'>        <span class="p">{</span><span class="o">%</span> <span class="nx">comment</span> <span class="o">%</span><span class="p">}</span> <span class="nx">As</span> <span class="err">`</span><span class="nx">page</span><span class="p">.</span><span class="nx">comments</span><span class="err">`</span> <span class="nx">is</span> <span class="nx">empty</span><span class="p">,</span> <span class="nx">we</span> <span class="nx">must</span> <span class="nx">be</span> <span class="nx">on</span> <span class="nx">the</span> <span class="nx">index</span> <span class="nx">page</span><span class="p">.</span> <span class="p">{</span><span class="o">%</span> <span class="nx">endcomment</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">disqus_script</span> <span class="o">=</span> <span class="s1">&#39;count.js&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">{</span><span class="o">%</span> <span class="nx">endif</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'>    <span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">dsq</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">);</span> <span class="nx">dsq</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="s1">&#39;text/javascript&#39;</span><span class="p">;</span> <span class="nx">dsq</span><span class="p">.</span><span class="nx">async</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">dsq</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">&#39;http://&#39;</span> <span class="o">+</span> <span class="nx">disqus_shortname</span> <span class="o">+</span> <span class="s1">&#39;.disqus.com/&#39;</span> <span class="o">+</span> <span class="nx">disqus_script</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;head&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">||</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">dsq</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}());</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span><span class='line'><span class="p">{</span><span class="o">%</span> <span class="nx">endif</span> <span class="o">%</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>  请修改 section 中的代码为：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'>   <span class="o">&lt;</span><span class="nx">section</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;comment&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="nx">h1</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&quot;title&quot;</span><span class="o">&gt;</span><span class="nx">Comments</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;disqus_thread&quot;</span> <span class="nx">aria</span><span class="o">-</span><span class="nx">live</span><span class="o">=</span><span class="s2">&quot;polite&quot;</span><span class="o">&gt;</span><span class="p">{</span><span class="o">%</span> <span class="nx">include</span> <span class="nx">disqus</span><span class="p">.</span><span class="nx">html</span> <span class="o">%</span><span class="p">}</span>  <span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/section&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> 然后 rake generate ; rake deploy 查看页面了。</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite">
+
+<script type="text/javascript">
+      var disqus_shortname = 'googlegis';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://googlegis.github.com/blog/2014/03/01/make-disqus-visable/';
+        var disqus_url = 'http://googlegis.github.com/blog/2014/03/01/make-disqus-visable/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+</div>
+</section>
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2014-Jay-
+  <span class="credit">
+         Power by 
+         <a href="http://octopress.org">Octopress</a>
+  </span>
+</p>
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+		</div>
+	</div>
+</body>
+</html>
