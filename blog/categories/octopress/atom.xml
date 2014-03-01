@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | 找屎啊！]]></title>
   <link href="http://googlegis.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://googlegis.github.com/"/>
-  <updated>2014-03-01T14:12:06+08:00</updated>
+  <updated>2014-03-01T14:58:38+08:00</updated>
   <id>http://googlegis.github.com/</id>
   <author>
     <name><![CDATA[Jay]]></name>
@@ -109,124 +109,170 @@
     <link href="http://googlegis.github.com/blog/2014/02/27/create-blog-with-github-in-mac/"/>
     <updated>2014-02-27T21:42:50+08:00</updated>
     <id>http://googlegis.github.com/blog/2014/02/27/create-blog-with-github-in-mac</id>
-    <content type="html"><![CDATA[<p> 参考： <a href="http://octopress.org/docs/setup/rvm/">http://octopress.org/docs/setup/rvm/</a></p>
+    <content type="html"><![CDATA[<p>参考： <a href="http://octopress.org/docs/setup/rvm/">http://octopress.org/docs/setup/rvm/</a></p>
 
 <p>一、 安装Ruby环境</p>
 
-<p>过程：
-安装rvm</p>
+<blockquote><h3>安装rvm</h3>
 
-<p>   执行 curl -L <a href="https://get.rvm.io">https://get.rvm.io</a> | bash -s stable —ruby
-   报错：checking for Tcl configuration&hellip; configure: error: Can&rsquo;t find</p>
+<p><code>
+ curl -L https://get.rvm.io | bash -s stable —ruby
+</code>
+   报错：
+<code>
+checking for Tcl configuration... configure: error: Can't find Tcl configuration definitions   Requirements installation failed with status: 1.
+</code></p>
 
-<pre><code>    Tcl configuration definitions   Requirements installation failed    
-    with status: 1.
-
-  解决方案：xcode-select —install  执行后，再执行1.
+<pre><code>  解决方案：
 </code></pre>
 
-<ol>
-<li><p>安装 ruby</p>
+<p>在终端中执行
+<code>
+xcode-select —install  
+</code>
+后，再执行1.</p>
 
-<p> rvm install 1.9.3
- rvm use 1.9.3
- rvm rubygems latest</p></li>
-<li><p> 创建github项目
-  注意此项： git@github.com:googlegis/googlegis.github.com.git</p></li>
-<li><p>在本机创建ssh</p></li>
-</ol>
+<h3>安装 ruby</h3>
 
+<p>```</p>
 
-<p>cd ~/.ssh
+<pre><code>rvm install 1.9.3
+rvm use 1.9.3
+rvm rubygems latest
+</code></pre>
+
+<p>```</p>
+
+<h3>创建github项目</h3></blockquote>
+
+<p>注意保存此链接： git@github.com:googlegis/googlegis.github.com.git</p>
+
+<blockquote><h3>在本机创建ssh</h3>
+
+<p><code>
+cd ~/.ssh
 ssh-keygen -t rsa -C 你注册github时的email
-弹出Enter file in which to save the key (/Users/twer/.ssh/id_rsa):直接按空格</p>
+</code>
+弹出
+<code>
+Enter file in which to save the key (/Users/twer/.ssh/id_rsa):
+</code>
+直接按空格</p></blockquote>
 
-<p>弹出Enter passphrase (empty for no passphrase):输入你github账号的密码。Enter same passphrase again:再次输入你的密码。</p>
+<p>弹出
+<code>
+Enter passphrase (empty for no passphrase):
+</code>
+输入你github账号的密码。
+<code>
+Enter same passphrase again:
+</code>
+再次输入你的密码。</p>
 
 <p>打开~/.ssh下的id_rsa.pub文件复制里面的全部内容。
 登陆github，选择Account Settings&mdash;>SSH Public Keys 添加ssh，把剪切板的内容复制到key输入框内直接保存。</p>
 
-<p>测试shh:</p>
-
-<p>ssh <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#103;&#x69;&#x74;&#64;&#103;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;">&#x67;&#x69;&#116;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#x2e;&#99;&#x6f;&#x6d;</a>
-输出</p>
-
-<p>PTY allocation request failed on channel 0
-Hi username! You&rsquo;ve successfully authenticated, but GitHub does not provide shell access.
+<p>测试shh:
+<code>
+ssh git@github.com
+</code>
+输出
+<code>
+PTY allocation request failed on channel 0
+Hi username! You've successfully authenticated, but GitHub does not provide shell access.
 Connection to github.com closed.
+</code>
 代表成功</p>
 
-<ol>
-<li><p>安装octopress</p>
+<blockquote><h3>安装octopress</h3>
 
-<p>  git clone  git://github.com/imathis/octopress.git octopress</p>
+<p>```
+git clone  git://github.com/imathis/octopress.git octopress</p></blockquote>
 
-<p>  cd octopress    # If you use RVM, You&rsquo;ll be asked if you trust the .rvmrc file (say yes).</p>
+<p>cd octopress    # If you use RVM, You&rsquo;ll be asked if you trust the .rvmrc file (say yes).</p>
 
-<p>  ruby &mdash;version  # Should report Ruby 1.9.3</p>
-
-<p>  安装依赖项</p>
-
-<p>   gem install bundler</p>
-
-<pre><code>rbenv rehash 
-
+<p>ruby &mdash;version  # Should report Ruby 1.9.3
+<code>
+安装依赖项
+</code>
+gem install bundler
+rbenv rehash
 bundle install
-</code></pre>
+<code>
+安装默认主题
+</code>
+rake install
+```</p>
 
-<p>   安装默认主题</p>
+<blockquote><h3>部署博客</h3></blockquote>
 
-<pre><code>rake install
-</code></pre></li>
-<li><p>部署博客</p></li>
-</ol>
+<p>利用octopress的一个配置rake任务来自动配置上面创建的仓库：可以让我们方便的部署GitHub page。在终端输入如下命令：
+<code>
+rake setup_github_pages
+</code>
+弹出之后输入
+<code>
+git@github.com:your_username/your_username.github.com.git
+</code>
+不要用提示的io，我的是
+git@github.com/googlegis/googlegis.github.com.git</p>
 
-
-<p>利用octopress的一个配置rake任务来自动配置上面创建的仓库：可以让我们方便的部署GitHub page。在终端输入如下命令：</p>
-
-<p>rake setup_github_pages
-弹出之后输入git@github.com:your_username/your_username.github.com.git不要用提示的io，我的是git@github.com/sgxiang/sgxiang.github.com.git</p>
-
-<p>输入以下命令部署博客</p>
-
-<p>rake generate
+<p>输入以下命令部署博客
+<code>
+rake generate
 rake deploy
-如果无法push到仓库的master分支，尝试在项目目录的.git/config中添加</p>
-
-<p>[branch &ldquo;master&rdquo;]
+</code>
+如果无法push到仓库的master分支，尝试在项目目录的.git/config中添加(此部分本人部署时没有用到)
+<code>
+[branch "master"]
  remote = origin
- merge = refs/heads/master</p>
+ merge = refs/heads/master
+</code></p>
 
-<p>7.写博客</p>
+<blockquote><h3>写博客</h3>
 
-<p>通过命令</p>
-
-<p>rake new_post[&ldquo;myTitle&rdquo;]
-文章生成在目录下的source/_posts目录下。文章是markdown格式的。可以通过 Mou 软件来编辑保存。</p>
+<p>通过命令
+<code>
+rake new_post["myTitle"]
+</code>
+文章生成在目录下的source/_posts目录下。文章是markdown格式的。可以通过 Mou 软件来编辑保存。</p></blockquote>
 
 <p>关于markdown的格式可以参考这篇文章:<a href="http://wowubuntu.com/markdown/">http://wowubuntu.com/markdown/</a></p>
 
-<p>写完后就可以部署更新文章到github上了</p>
-
-<p>rake generate
+<p>写完后就可以部署更新文章到github上了
+<code>
+rake generate
+rake deploy
+</code>
+将你的原始文件保存在github上。
+<code>
 git add .
-git commit -am &ldquo;Some comment here.&rdquo;
+git commit -am "Some comment here."
 git push origin source
-rake deploy</p>
+</code></p>
 
-<pre><code> 8. 更换主题
+<blockquote><h3>更换主题</h3></blockquote>
+
+<p>Install
+<code>
+$ cd octopress  #octopress directory
+$ git clone git@github.com:shashankmehta/greyshade.git .themes/greyshade
+$ echo "\$greyshade: color;" &gt;&gt; sass/custom/_colors.scss //Substitue 'color' with your highlight color
+$ rake "install[greyshade]"
+$ rake generate
+</code></p>
+
+<blockquote><h3>修改头像。</h3>
+
+<p>在 gravatar.com 使用邮箱注册 账号，并上传自己的头像图片
+然后修改两处：
+1. octopress/_config.yml</p>
+
+<pre><code>email: gravatar@maill
 </code></pre>
 
-<p>Install</p>
-
-<p>$ cd octopress  #octopress directory
-$ git clone git@github.com:shashankmehta/greyshade.git .themes/greyshade
-$ echo &ldquo;\$greyshade: color;&rdquo; >> sass/custom/_colors.scss //Substitue &lsquo;color&rsquo; with your highlight color
-$ rake &ldquo;install[greyshade]&rdquo;
-$ rake generate</p>
-
-<p>修改主题：
- 修改头像。   mygravatar id</p>
+<p>这里的gravatar@mail 更换为自己的注册gravatar的邮箱
+2. 待查证</p></blockquote>
 ]]></content>
   </entry>
   
