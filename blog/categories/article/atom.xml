@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Article | 找屎啊！]]></title>
   <link href="http://googlegis.github.com/blog/categories/article/atom.xml" rel="self"/>
   <link href="http://googlegis.github.com/"/>
-  <updated>2014-03-04T13:40:18+08:00</updated>
+  <updated>2014-03-04T13:47:52+08:00</updated>
   <id>http://googlegis.github.com/</id>
   <author>
     <name><![CDATA[Jay]]></name>
@@ -20,7 +20,7 @@
     <id>http://googlegis.github.com/blog/2014/03/04/the-animal-of-zhihu</id>
     <content type="html"><![CDATA[<p>前端时间，知乎搞了吉祥物设计大赛，自己做了一个发过去，被退！ ^_^</p>
 
-<p>{% image /images/2014/zhihu3.png %}</p>
+<p><img src="/images/2014/zhihu3.png"></p>
 
 <p>全文如下：</p>
 
@@ -44,7 +44,7 @@
 </ul>
 </blockquote>
 
-<p>{% image /images/2014/zhihu2.png %}</p>
+<p><img src="/images/2014/zhihu2.png"></p>
 ]]></content>
   </entry>
   
@@ -60,7 +60,7 @@
 <blockquote><ul>
 <li><p>机场感觉是脏乱差，机场厕所里一股尿骚味。竟然也敢自称为 国际机场， 也不怕给国际这两个字抹黑。下了飞机，出门打车，门口几个零落的出租，司机下车讨价还价，问了一下，到市区，150，还不打表，不给发票。胆小不敢做，还是坐大巴。20元的大巴价格倒便宜，只是车上不开空调，又热得要命，好等歹等终于开车了，开起来就有风了，没有汽油味和灰尘味了。  下了大巴，打车打不到，最后和别人拼车到酒店，还好市里的出租都比较规矩。</p></li>
 <li><p>新区规划有潜力：我们上班的地点在郑东新区，有个公交站点叫京珠高速下口，听这个名字就知道离市区很远了。<br/>
- {% img /images/2014/zhengzhou.jpg %}
+ <img src="/images/2014/zhengzhou.jpg">
 我了个去啊，每天上下班40分钟，加上两头走路，基本每天来回要花两个小时在路上。可见这个地方有多偏了。
 一路上，路是宽的，景是多的，几乎到了乡下的那种感觉，14路像是拖拉机的感觉</p></li>
 <li>住的地方在东建材，一大片好几条街全是卖建材的。钢筋水泥铝合金，门窗手柄地板砖，凡是你能想到的建材都能在这里买到，每天人来车往，全是忙碌的样子。就是在这里走路要万分小心，有的地方没有红绿灯，有的路口就算是有红绿灯也没有人和车遵守，八仙过海，走过去算自己的本事。</li>
@@ -167,7 +167,7 @@
 
 <h2>娃子在这头.</h2>
 
-<p> {% img /images/misshome.jpg %}</p>
+<p> <img src="/images/misshome.jpg"></p>
 ]]></content>
   </entry>
   

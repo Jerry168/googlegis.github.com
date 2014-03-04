@@ -4,7 +4,7 @@
   <title><![CDATA[找屎啊！]]></title>
   <link href="http://googlegis.github.com/atom.xml" rel="self"/>
   <link href="http://googlegis.github.com/"/>
-  <updated>2014-03-03T22:14:37+08:00</updated>
+  <updated>2014-03-04T13:47:52+08:00</updated>
   <id>http://googlegis.github.com/</id>
   <author>
     <name><![CDATA[Jay]]></name>
@@ -12,6 +12,41 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[知乎吉祥物--参赛作品]]></title>
+    <link href="http://googlegis.github.com/blog/2014/03/04/the-animal-of-zhihu/"/>
+    <updated>2014-03-04T13:33:31+08:00</updated>
+    <id>http://googlegis.github.com/blog/2014/03/04/the-animal-of-zhihu</id>
+    <content type="html"><![CDATA[<p>前端时间，知乎搞了吉祥物设计大赛，自己做了一个发过去，被退！ ^_^</p>
+
+<p><img src="http://googlegis.github.com/images/2014/zhihu3.png"></p>
+
+<p>全文如下：</p>
+
+<blockquote><p>矢问 为中文字 “矢” 的变形，以毛笔的手法进行人物化；上面为方巾，代表知识；中间浅色是头，有双手双脚，整个形态为人昂首阔步向前走，代表积极向上；矢为知的一半，一表示是知乎的吉祥物，二表示人永远知道一半，不可能所有都知道，也代表知乎的性质为问答社区; 矢字本意表示为箭矢，表示在知乎为有目的的问，表示知乎社区严谨的社区环境。  <br/>
+老婆问我为什么不给它填上五官，我说：知识无界，永远不懂知识到底是个什么样子。</p>
+
+<ul>
+<li><p>关于名称—矢问
+      吉祥物的名称有很多，看到很多其它的名字，很伤心。难道所有的马都必须起个名字叫“萌萌”吗？
+      矢问，有知有问，符合知乎的形态，更符合知乎的清新的风格。
+      另外，喜欢叶问这个名字，所以借用了他的一个字。</p></li>
+<li><p>矢问的性格
+ 定义为积极努力，阳光运动。对知识永远保存在饥渴的状态。有知有问。</p></li>
+<li><p>关于外设
+        外设还没有来得及想，文化衫肯定是少不了的。各种凡是能印刷和雕刻的东西都跑不了。</p></li>
+<li><p>可扩展
+这么简单的造型和颜色，留有了丰富的可扩展空间，包括颜色或动作都可以进行多元素化，春节可以穿棉袄，夏天可以穿T恤，情人节可以kiss，圣诞节可以堆雪人，都可以在头部和身体部位显示出来。</p></li>
+<li><p>关于我
+<a href="http://www.zhihu.com/people/googlegis">http://www.zhihu.com/people/googlegis</a>
+普通代码编程人员，住在上海。已婚。常混于知乎，但能力有限，只F其他人。我不会ps及其它设计软件，当过完年看到知乎招收吉祥物时，这个矢字的人形造型就出现在我的脑海里，今天找个机会问了一下美工，如何画圆滑的曲线，然后开始做这个画。画很简单，但是我相信有人会喜欢。</p></li>
+</ul>
+</blockquote>
+
+<p><img src="http://googlegis.github.com/images/2014/zhihu2.png"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[郑州见闻]]></title>
@@ -1046,23 +1081,6 @@ git@github.com/googlegis/googlegis.github.com.git</p>
 
 今天看了一下老婆的B超单，LOT,左横位，就在网上查了一下，没什么问题，宝宝在整个妊娠期，位置和方位会不停的变来变去，很多到预产期就成为LOA,左枕位 或者 ROA,右枕位，顺产，是不成问题的了。
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[中元悼吾妹火青]]></title>
-    <link href="http://googlegis.github.com/blog/2011/08/04/my-lovely-sister/"/>
-    <updated>2011-08-04T21:25:03+08:00</updated>
-    <id>http://googlegis.github.com/blog/2011/08/04/my-lovely-sister</id>
-    <content type="html"><![CDATA[<h3>卿本绛洞一花仙</h3>
-
-<h3>懵懂出世入尘凡</h3>
-
-<h3>一朝春去花散尽</h3>
-
-<h3>空留余恨在人间</h3>
-
-<p>&mdash;&mdash;&mdash;&mdash;-中元节即为鬼节，也叫盂兰盆节。夜梦鬼魄，不神不仙，非鬼非妖，大汗惊醒。</p>
 ]]></content>
   </entry>
   
