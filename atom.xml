@@ -4,7 +4,7 @@
   <title><![CDATA[找屎啊！]]></title>
   <link href="http://googlegis.github.com/atom.xml" rel="self"/>
   <link href="http://googlegis.github.com/"/>
-  <updated>2014-03-04T13:47:52+08:00</updated>
+  <updated>2014-03-07T14:22:21+08:00</updated>
   <id>http://googlegis.github.com/</id>
   <author>
     <name><![CDATA[Jay]]></name>
@@ -12,6 +12,36 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[学习iPhone开发]]></title>
+    <link href="http://googlegis.github.com/blog/2014/05/01/study-the-iphone-dev/"/>
+    <updated>2014-05-01T14:09:07+08:00</updated>
+    <id>http://googlegis.github.com/blog/2014/05/01/study-the-iphone-dev</id>
+    <content type="html"><![CDATA[<p>04年的第一个计划就是要学习iPhone开发。</p>
+
+<p>计划两个月时间，把Standford 的视频和书籍教程看完，</p>
+
+<p>我知道我自己的进度和能力。</p>
+
+<p>每次都说要学习，结果都是半途而废，这次无论如何不能放弃。</p>
+
+<p>如果我能活到70岁古稀的话，我的人生已经过了一半了。</p>
+
+<p>争取两年内完全丢弃Windows开发，使自己在技术能力上再上升到一个新的层次。</p>
+
+<p>我知道octopress是按照时间排序的，今天是2014.3.7号。 但是我把时间写在了2014.5.1。</p>
+
+<p>是为了提醒自己，在2014.5.1时，第一个学习计划应该结束了。</p>
+
+<p>这篇文章会随时记录学习进度。权当催促自己吧。</p>
+
+<blockquote><ul>
+<li>2014.3.6 晚，视频1. MVC and Introduction to Objective-C (September 27, 2011) &ndash; SD</li>
+</ul>
+</blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[知乎吉祥物--参赛作品]]></title>
@@ -1065,22 +1095,6 @@ git@github.com/googlegis/googlegis.github.com.git</p>
 <h2>孤老终身罪</h2>
 
 <h2>人生无牵念</h2>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[宝宝第一次动了]]></title>
-    <link href="http://googlegis.github.com/blog/2011/08/07/first-of-baby/"/>
-    <updated>2011-08-07T22:44:08+08:00</updated>
-    <id>http://googlegis.github.com/blog/2011/08/07/first-of-baby</id>
-    <content type="html"><![CDATA[<pre><code>昨天有预报说，梅超风要来，结果是与上海是擦肩而过，坐等也没等到。不过，却等来了胎儿的第一次胎动。昨天早晨，醒来时老婆说，宝宝动了，能感受到，慌的我脚忙手乱的就爬在肚子上听，仅仅是一下，有点向外鼓的感觉，耳根都能感到动静。然后就掩旗息鼓，难以寻觅。于是，不死心的时不时爬在老婆肚子上听，一直到睡觉，就像台风一样都没有出现。
-
-今天早晨，早早起来，准备和宝宝进行交流，老婆醒来告诉说又有动静了。哈哈，抓起手机准备测心跳。把耳朵贴上去，随着肚子里的声音，一震一震的，能够明显的感觉到是另一个心跳，高兴的忘乎所以，测了两次，才70多，好像不太对，后来上网查才知道，要有专门的仪器听的才准。我估计是把心跳 胎动 消化 羊水的声音听在一起了。哈哈。不过不要紧，老婆刚去医院查的胎心140多呢。
-然后就爬在床上盯着老婆的肚子看，哈哈，竟然被我看到，有个地方像敲鼓一样鼓了一下，小宝宝还是很有力量的嘛。据老婆说，就像有个气泡在那里頂了一下。哈哈。
-原来有个新生命的感觉这么的兴奋 ，奇怪，充满期待。
-
-今天看了一下老婆的B超单，LOT,左横位，就在网上查了一下，没什么问题，宝宝在整个妊娠期，位置和方位会不停的变来变去，很多到预产期就成为LOA,左枕位 或者 ROA,右枕位，顺产，是不成问题的了。
-</code></pre>
 ]]></content>
   </entry>
   
