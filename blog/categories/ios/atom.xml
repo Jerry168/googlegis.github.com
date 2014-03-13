@@ -4,7 +4,7 @@
   <title><![CDATA[Category: iOS | 找屎啊！]]></title>
   <link href="http://googlegis.github.com/blog/categories/ios/atom.xml" rel="self"/>
   <link href="http://googlegis.github.com/"/>
-  <updated>2014-03-09T12:25:20+08:00</updated>
+  <updated>2014-03-13T10:49:47+08:00</updated>
   <id>http://googlegis.github.com/</id>
   <author>
     <name><![CDATA[Jay]]></name>
@@ -38,12 +38,12 @@
 
 <p>使用教材  stanford scs 193p</p>
 
-<p>视频： <a href="https://itunesu.itunes.apple.com/feed/id480479762">https://itunesu.itunes.apple.com/feed/id480479762</a></p>
+<p>视频： <a href="https://itunes.apple.com/us/itunes-u/ipad-iphone-application-development/id473757255?mt=10"> https://itunes.apple.com/us/itunes-u/ipad-iphone-application-development/id473757255?mt=10</a></p>
 
 <p>书籍： <a href="https://itunes.apple.com/us/book/ipad-iphone-app-development/id571023793?mt=13">https://itunes.apple.com/us/book/ipad-iphone-app-development/id571023793?mt=13</a></p>
 
 <p>代码下载：本人根据教程自己编写，供做记录。
-<a href="https://github.com/googlegis/calculator">https://github.com/googlegis/calculator</a></p>
+<a href="https://github.com/googlegis/iOSstudy">https://github.com/googlegis/iOSstudy</a></p>
 
 <blockquote><ul>
 <li><p>2014.3.6 夜，视频1. MVC and Introduction to Objective-C (September 27, 2011) &ndash; SD</p></li>
@@ -51,6 +51,9 @@
 <li><p>2014.3.7 夜，视频2. My First iOS App (September 29, 2011) &ndash; SD</p></li>
 <li><p>2014.3.8 昼夜， 书籍。 3.4.5.</p></li>
 <li><p>2014.3.9 昼，视频3. Objective-C (October 4, 2011) &ndash; SD</p></li>
+<li><p>2014.3.10 昼夜  书籍。 6.7</p></li>
+<li><p>2014.3.11 夜 4. Views (October 6, 2011) &ndash; SD</p></li>
+<li><p>2014.3.12 夜，controls 代码示例</p></li>
 </ul>
 </blockquote>
 ]]></content>
