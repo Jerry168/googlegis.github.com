@@ -3,12 +3,12 @@ layout: post
 title: "学习iPhone开发"
 date: 2014-05-01 14:09:07 +0800
 comments: true
-categories: iPhone
+categories: iOS
 ---
 
 04年的第一个计划就是要学习iPhone开发。
 
-计划两个月时间，把Standford 的视频和书籍教程看完，
+计划两个月时间，把Stanford 的视频和书籍教程看完，
 
 我知道我自己的进度和能力。
 
@@ -24,6 +24,27 @@ categories: iPhone
 
 这篇文章会随时记录学习进度。权当催促自己吧。
 
->* 2014.3.6 晚，视频1. MVC and Introduction to Objective-C (September 27, 2011) - SD
+使用教材  stanford scs 193p 
 
->* 2014.3.7 晚，视频2. My First iOS App (September 29, 2011) - SD
+视频： [ https://itunes.apple.com/us/itunes-u/ipad-iphone-application-development/id473757255?mt=10]( https://itunes.apple.com/us/itunes-u/ipad-iphone-application-development/id473757255?mt=10)  
+
+书籍： [https://itunes.apple.com/us/book/ipad-iphone-app-development/id571023793?mt=13](https://itunes.apple.com/us/book/ipad-iphone-app-development/id571023793?mt=13)
+
+代码下载：本人根据教程自己编写，供做记录。
+[https://github.com/googlegis/iOSstudy](https://github.com/googlegis/iOSstudy)
+
+>* 2014.3.6 夜，视频1. MVC and Introduction to Objective-C (September 27, 2011) - SD
+    
+>* 2014.3.7 昼，书籍。 1.2.  
+
+>* 2014.3.7 夜，视频2. My First iOS App (September 29, 2011) - SD
+
+>* 2014.3.8 昼夜， 书籍。 3.4.5.
+
+>* 2014.3.9 昼，视频3. Objective-C (October 4, 2011) - SD 
+
+>* 2014.3.10 昼夜  书籍。 6.7
+
+>* 2014.3.11 夜 4. Views (October 6, 2011) - SD
+
+>* 2014.3.12 夜，controls 代码示例
