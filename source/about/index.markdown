@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "about"
+title: "About Me"
 date: 2014-02-27 13:44
 comments: true
 sharing: true
@@ -8,7 +8,6 @@ footer: true
 ---
 
 
-# 关于我
 
 ## 鸡年天平,幼时多病,幸得母亲大人多般照料.
 
