@@ -527,12 +527,18 @@
         <lastmod>2014-04-15T10:16:05+08:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://googlegis.github.com/blog/2014/05/06/that-is-all-i-did-not-finish-the-plan/
+        </loc>
+        <lastmod>2014-05-06T14:14:32+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://googlegis.github.com/about/</loc>
         <lastmod>2014-04-20T11:23:19+08:00</lastmod>
     </url>
     <url>
         <loc>http://googlegis.github.com/blog/archives/</loc>
-        <lastmod>2014-04-23T11:32:54+08:00</lastmod>
+        <lastmod>2014-05-06T14:14:32+08:00</lastmod>
     </url>
     <url>
         <loc>http://googlegis.github.com/blog/categories/</loc>
@@ -540,7 +546,7 @@
     </url>
     <url>
         <loc>http://googlegis.github.com/</loc>
-        <lastmod>2014-04-23T11:32:54+08:00</lastmod>
+        <lastmod>2014-05-06T14:14:32+08:00</lastmod>
     </url>
     <url>
         <loc>http://googlegis.github.com/robots.txt</loc>
